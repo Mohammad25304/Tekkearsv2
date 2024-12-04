@@ -19,6 +19,7 @@ use App\Http\Controllers\ScorerController;
 use App\Http\Controllers\StandingsController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\AuthController;
 //for competition
 Route::get('/competitions', [CompetitionController::class, 'index']);
 Route::get('/competitions/{id}', [CompetitionController::class, 'show']);
@@ -40,7 +41,6 @@ Route::get('/fetch-scorers', [ScorerController::class, 'fetchScorers']);
 
 //for standing
 Route::get('/api-standings/{competitionId}', [StandingsController::class, 'viewStandingsFromApi']);
-
 
 
 
