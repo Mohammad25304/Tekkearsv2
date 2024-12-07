@@ -18,4 +18,10 @@ class Scorer extends Model
         'birthdate',
         'nationality',
     ];
+
+    public function team()
+    {
+        return $this->belongsTo(Team::class, 'team_id', 'id');
+    }
+
 }

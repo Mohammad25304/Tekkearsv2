@@ -22,4 +22,14 @@ class Stand extends Model
         'goals_against',
         'goal_difference',
     ];
+
+    public function competition()
+    {
+        return $this->belongsTo(Competition::class, 'competition_id', 'competition_id');
+    }
+
+    public function team()
+    {
+        return $this->belongsTo(Team::class, 'team_name', 'name'); // Adjust if using `team_id` instead
+    }
 }

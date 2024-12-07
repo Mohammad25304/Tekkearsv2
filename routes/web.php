@@ -46,17 +46,6 @@ Route::get('/api-standings/{competitionId}', [StandingsController::class, 'viewS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
 
